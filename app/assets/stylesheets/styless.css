@@ -631,8 +631,8 @@ position: absolute;
 }
 .desc
 {
-  text-align:justify;
-  height:50px;
+  text-align: center;
+  height: 50px;
   overflow: hidden;
 }
 .off

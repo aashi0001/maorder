@@ -22,7 +22,7 @@
     }
     .ad_option
     {
-      text-align:center;
+      text-align: center;
     }
     .ad_option a
     {
@@ -30,7 +30,9 @@
     }
     .logi
     {
-      background:#fff;border:none;color:#f75b16;
+      background:#fff;
+      border:none;
+      color:#f75b16;
     }
     .logi:hover
     {
