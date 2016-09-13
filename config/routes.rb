@@ -1,9 +1,61 @@
 Rails.application.routes.draw do
+  get 'shoes/shoe'
+
+  get 'public/view'
+
+  get 'feature/feature'
+
+  get 'camera/camera'
+
+  get 'cosmetics/cosmetics'
+
+  get 'furniture/furniture'
+
+  get 'hair/hair'
+
+  get 'homefurnishing/homefurnishing'
+
+  get 'kidsclothing/kidsclothing'
+
+  get 'kitchenappliance/kitchenappliance'
+
+  get 'laptop/laptop'
+
+  get 'login/login'
+
+  get 'menclothing/menclothing'
+
+  get 'mobile/mobile'
+
+  get 'shoes/shoes'
+
+  get 'tablet/tablet'
+
+  get 'womenbags/womenbags'
+
+  get 'womenclothing/womenclothing'
+
+  get 'photo/photo'
+
+  get 'product/product'
+
+  get 'subcategory/subcategory'
+
+  get 'category/category'
+
+  get 'maincategory/maincategory'
+
+  get 'admin/admin'
+
+  get 'userdetail/userdetail'
+
+  get 'user/user'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'public#view'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -53,4 +105,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+   get':controller(/:action(/:id(.:format)))'=>'foo#matchers'
+  post':controller(/:action(/:id(.:format)))'=>'foo#matchers'
 end
