@@ -631,8 +631,8 @@ position: absolute;
 }
 .desc
 {
-  text-align: center;
-  height: 50px;
+  text-align: justify;
+  height:50px;
   overflow: hidden;
 }
 .off
@@ -881,7 +881,7 @@ position: absolute;
 {
   background: #35bc7a;
   color:#fff;
-  text-align: justify: ;
+  text-align: justify;
 }
 .cols_footer
 {
