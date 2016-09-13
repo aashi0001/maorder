@@ -1,0 +1,5 @@
+Sample B2B Ecommerce Application 
+admin username : admin@gmail.com
+admin password : workingfine
+
+please test the app and pull issues.
