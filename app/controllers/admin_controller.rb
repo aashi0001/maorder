@@ -6,7 +6,7 @@ class AdminController < ApplicationController
   def admin
   	dp
   	session[:count_user] = User.count('email', :distinct => true)
-  	session[:count_seller] = User.where('is_seller >= "1"').count('email', :distinct => true)
+  	session[:count_seller] = User.where('is_seller = true').count('email', :distinct => true)
   end
   def error_msg
   	

@@ -9,7 +9,7 @@ def authenticate
   	password = params[:user][:password]
   	@user = User.authenticate_user(email,password)	
   	session[:count_user] = User.count('email', :distinct => true)
-  	session[:count_seller] = User.where('is_seller >= "1"').count('email', :distinct => true)
+  	session[:count_seller] = User.where('is_seller = true').count('email', :distinct => true)
   	
 	if @user
     session[:user_id] = @user.id
@@ -32,6 +32,7 @@ def authenticate
   def logout
   	 session[:email] = nil
     session[:id] = nil
+    session[:user_id]=nil
     session[:name] = nil
     session[:products] = nil
     session[:cart_size] = nil
